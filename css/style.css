@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy/gilroy-black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy/gilroy-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/openSans/OpenSans-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+:root {
+  --black: #000;
+  --black-dark: #363636;
+  --grey: #464646;
+  --grey-half: #7e7e7e;
+  --grey-light: #e5e5e5;
+  --yellow: #f7e296;
+  --yellow-dark: #f0c52e;
+  --green: #91c92f;
+  --white: #fff;
+  --white-30: rgba(255, 255, 255, 0.3);
+  --white-60: rgba(255, 255, 255, 0.6);
+
+  --gl:#4d5e9b;
+
+  --minWidth:320;
+  --maxWidth:1400;
+  --maxWidthContainer:1140px;
+}
+
+.container{
+  max-width: var(--maxWidthContainer);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* header */
+.header{
+
+}
+
+.header__top{
+  background-color: var(--gl);
+}
+.top-header__content{
+  display: flex;
+  background-image: url(../images/product/fruits/kiwi.png);
+  /* background-position: 1000px 1000px; */
+  background-repeat: no-repeat;
+}
+.top-header__column{
+  flex: 0 1 50%;
+}
+.logo img{
+  max-width: 100px;
+}
